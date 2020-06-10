@@ -1,0 +1,25 @@
+<app-header [quantity]="quantitySelected"></app-header>
+<form>
+  <div class="container-fluid body-wrap">
+    <div class="col-md-4 col-sm-4 col-xs-4">
+      <img [src]="productDetail.image" alt="" />
+      <div class="cart">
+        <button class="btn btn-primary" (click)="addToCart()">
+          Add to cart
+        </button>
+      </div>
+    </div>
+    <div class="col-md-8 col-sm-8 col-xs-8">
+      <p>Name : {{ productDetail.name }}</p>
+      <p>Description : {{ productDetail.description }}</p>
+      <p>Price : Rs.{{ productDetail.price }}</p>
+      <span>Quantity : </span>
+      <select [(ngModel)]="productDetail.quantity" name="quantity"
+        ><option [value]="i" *ngFor="let i of quantityArr">{{
+          i
+        }}</option></select
+      >
+    </div>
+  </div>
+</form>
+<app-footer></app-footer>

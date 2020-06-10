@@ -1,0 +1,22 @@
+<app-header [quantity]="quantitySelected"></app-header>
+<div class="container-fluid body-wrap">
+  <div class="product-wrap">
+    <div style="padding: 10px 0px 0px 10px;">
+      <i class="fa fa-angle-left" (click)="goBack()"></i> My Cart({{
+        quantitySelected
+      }})
+    </div>
+    <hr />
+    <div class="product-detail" *ngFor="let item of cartProducts">
+      <div class="col-md-3 col-xs-3 col-sm-3">
+        <img [src]="item.image" alt="" style="width: 125px; height: 125px;" />
+      </div>
+      <div class="col-md-9 col-xs-9 col-sm-9">
+        <p>Name : {{ item.name }}</p>
+        <p>Price : {{ item.price }}</p>
+        <p>Quantity : {{ item.quantity }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,15 @@
+.body-wrap {
+  padding: 30px;
+  display: flex;
+  min-height: calc(100vh - (79px + 30px));
+  overflow: auto;
+  .col {
+    padding: 0px;
+  }
+  .cart {
+    margin-top: 27px;
+    button {
+      width: 222px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <img src="/assets/images/header.png" alt="" />
+  <i
+    [matBadge]="quantity ? quantity : ''"
+    matBadgeOverlap="false"
+    class="fa fa-shopping-cart"
+    aria-hidden="true"
+    (click)="goToMyCart()"
+  ></i>
+</div>

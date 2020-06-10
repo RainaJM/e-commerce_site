@@ -1,0 +1,13 @@
+<app-header [quantity]="quantitySelected"></app-header>
+<div class="container-fluid body-wrap">
+  <div
+    class="product-card col-md-3 col-sm-3 col-xs-3"
+    *ngFor="let item of productList"
+    (click)="getProductDetails(item)"
+  >
+    <img src="{{ item.image }}" alt="no image" />
+    <div style="margin-bottom: 10px;">{{ item.name }}</div>
+    <div style="margin-bottom: 0px;">{{ item.price }}</div>
+  </div>
+</div>
+<app-footer></app-footer>

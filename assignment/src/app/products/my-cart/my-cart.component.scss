@@ -1,0 +1,20 @@
+.body-wrap {
+  background: lavender;
+  width: 100%;
+  height: calc(100vh - (79px + 30px));
+  overflow: auto;
+  padding: 20px 40px;
+}
+.product-wrap {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+  width: 64%;
+  max-height: 100%;
+  overflow: auto;
+  padding: 20px;
+  background: white;
+
+  .product-detail {
+    display: flex;
+    margin-bottom: 10px;
+  }
+}
